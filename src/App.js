@@ -4,27 +4,8 @@ import './App.css';
 
 class App extends Component {
 
-  constructor (props) {
-    super(props);
-    console.log("Constructor")
-  }
-
-  componentWillMount() {
-    console.log("Will Mount")
-  }
-
-  componentDidMount() {
-    console.log("Mounted")
-  }
-
-  state = {
-    toggle: true
-  }
-
-  toggle = () => {
-    this.setState({
-      toggle: !this.state.toggle
-    })
+  submit = () => {
+    console.log(this.text.value)
   }
 
   render() {
@@ -32,24 +13,21 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <MyFirstComponent text="Welcome to React!" toggle={this.state.toggle} />
+          <Welcome text="Welcome to React!" />
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        {this.state.toggle && 
-          <p>This should show and hide</p>
-        }
-        <button onClick={this.toggle}>Show / Hide</button>
+        <input type="text" ref={(input) => this.text = input} />
+        <button onClick={this.submit}>Show Value</button>
       </div>
     );
   }
 }
 
-class MyFirstComponent extends Component {
+class Welcome extends Component {
   render() {
-    const { text, toggle } = this.props;
-    console.log(toggle)
+    const { text } = this.props;
     return (
       <h1 className="App-title">{text}</h1>
     );
