@@ -6,7 +6,7 @@ import Movie from './Movie';
 
 class App extends Component {
   state = {
-    movies: []
+    movies: [],
   }
 
   async componentDidMount() {
@@ -15,9 +15,9 @@ class App extends Component {
       const movies = await result.json();
 
       this.setState({
-        movies: movies.results
-      })
-    } catch(e) {
+        movies: movies.results,
+      });
+    } catch (e) {
       console.log(e);
     }
   }
