@@ -4,6 +4,19 @@ import './App.css';
 
 class App extends Component {
 
+  constructor (props) {
+    super(props);
+    console.log("Constructor")
+  }
+
+  componentWillMount() {
+    console.log("Will Mount")
+  }
+
+  componentDidMount() {
+    console.log("Mounted")
+  }
+
   state = {
     toggle: true
   }
