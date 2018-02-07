@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import Movie from './Movie';
 
-class MoviesList extends Component {
+// Pure components do top level checking only (ie. if movies[0].title changed, it would not re-render)
+class MoviesList extends PureComponent {
   state = {
     movies: [],
   }
