@@ -18,6 +18,7 @@ class App extends Component {
         movies: movies.results,
       });
     } catch (e) {
+      // eslint-disable-next-line no-console
       console.log(e);
     }
   }
