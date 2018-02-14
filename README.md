@@ -3,7 +3,7 @@
 [Check it out here!](http://react-movie-db.s3-website.us-east-2.amazonaws.com/)
 
 # About
-This was a little project I put together while learning React. More of a demonstration of my abilities than a functional application. It interfaces with the awesome [themoviedb.org](https://www.themoviedb.org) to pull back movie information and images. Coming from a background in Rails and AngularJS the transition to React for this project was a fun challenge. I look forward to using React in my future projects!
+This was a little project I put together while learning React. More of a demonstration of my abilities than a functional application. It interfaces with [themoviedb.org](https://www.themoviedb.org) to pull back movie information and images. Coming from a background in Rails and AngularJS the transition to React for this project was a fun challenge. I look forward to using React in my future projects! Shoutout to the awesome [Level Up Tutorials!](https://www.leveluptutorials.com/)
 
 ## Code Samples
 In this project I wanted to focus on writing clean and modern es6 code with React 16. Heres a few samples I wanted to show off. Feel free to check all the source files out in the repo!
