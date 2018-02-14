@@ -7,7 +7,6 @@ This was a little project I put together while learning React. More of a demonst
 
 ## Code Samples
 In this project I wanted to focus on writing clean and modern es6 code with React 16. Heres a few samples I wanted to show off. Feel free to check all the source files out in the repo!
-***
 
 ### Modern ES6
 ![alt pure](https://i.imgur.com/CmEiKhY.png)
